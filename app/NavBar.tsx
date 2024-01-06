@@ -13,27 +13,32 @@ const NavBar = () => {
   };
 
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <Link href="/">
-          <span className="colorPrimary">Crypto</span>
-          <span className="colorAccent">Gaze</span>
-        </Link>
-      </div>
-      <div className={styles.navList}>
-        <div className={`${styles.navLink} `}>
-          <Link href="/">Home</Link>
+    <header className={styles.headerWrapper}>
+      <div className={styles.header}>
+        <div className={styles.logo}>
+          <Link href="/">
+            <span className="colorPrimary">Crypto</span>
+            <span className="colorAccent">Gaze</span>
+          </Link>
         </div>
-        <div className={`${styles.navLink} `}>
-          <Link href="/coins">Coins</Link>
+        <div className={styles.navList}>
+          <div className={`${styles.navLink} `}>
+            <Link href="/">Home</Link>
+          </div>
+          <div className={`${styles.navLink} `}>
+            <Link href="/coins">Coins</Link>
+          </div>
+          <div className={`${styles.navLink} `}>
+            <Link href="/convert">Convert</Link>
+          </div>
+          <div className={`${styles.navLink} `}>
+            <Link href="/about">About Us</Link>
+          </div>
         </div>
-        <div className={`${styles.navLink} `}>
-          <Link href="/convert">Convert</Link>
+        <div className={styles.mobileNavToggler}>
+          <div className={styles.lines}></div>
+          <div className={styles.lines}></div>
         </div>
-      </div>
-      <div className={styles.mobileNavToggler}>
-        <div className={styles.lines}></div>
-        <div className={styles.lines}></div>
       </div>
     </header>
   );

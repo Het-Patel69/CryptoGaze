@@ -1,8 +1,11 @@
-.heroSection {
+.section {
     max-width: 1200px;
+}
+
+.heroSection {
     display: flex;
     align-items: center;
-    padding-top: 5rem;
+    padding-block: 5rem;
 }
 
 .heroLeft {
@@ -16,7 +19,7 @@
     flex: 3;
 }
 
-.heroRight img{
+.heroRight img {
     max-width: 100%;
     object-fit: contain;
 }
@@ -31,11 +34,11 @@
     margin-bottom: 1rem;
 }
 
-.heroBtns{
+.heroBtns {
     display: flex;
     gap: 1rem;
 }
 
-.heroButton{
+.heroButton {
     font-size: 1rem;
 }
