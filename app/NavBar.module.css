@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0px;
+    background-color: var(--background);
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.navList{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    display: none;
+}
+
+.navLink{
+    font-size: 1.2rem;
+}
+
+.mobileNavToggler{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.mobileNavToggler .lines{
+    background-color: black;
+    height: 1px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .mobileNavToggler{
+        display: none;
+    }
+
+    .navList{
+        display: flex;
+    }
+}
