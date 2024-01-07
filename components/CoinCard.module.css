@@ -1,22 +1,18 @@
 .coinCard {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     gap: 2rem;
 }
 
 .green {
-    background-color: #1f7f470f;
+    background-color: #1f7f4708;
 }
 
 .red {
-    background-color: #da6c6c0f;
+    background-color: #da6c6c08;
 }
 
 .left, .right{

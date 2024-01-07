@@ -1,8 +1,3 @@
-.title{
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
 .coinsGrid{
     display: grid;
     row-gap: 1rem;

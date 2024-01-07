@@ -77,6 +77,11 @@ a {
   background-color: var(--secondaryLight);
 }
 
+.section-title{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
 main {
   padding: 0rem 1rem;
   display: flex;
