@@ -1,21 +1,23 @@
 .headerWrapper{
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: -1px;
+    width: 100%;
+    background-color: var(--background);
+    z-index: 999;
 }
 
 .header {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1rem;
-    position: sticky;
-    top: 0px;
-    background-color: var(--background);
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 
@@ -44,14 +46,16 @@
 }
 
 @media screen and (min-width: 768px) {
-
     .mobileNavToggler {
         display: none;
     }
-
     .navList {
         display: flex;
     }
+    .logo{
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -59,5 +63,4 @@
         padding: 1rem 0;
         max-width: 1200px;
     }
-    
 }

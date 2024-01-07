@@ -8,7 +8,6 @@
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 1rem;
     gap: 2rem;
 }
 
@@ -20,21 +19,30 @@
     background-color: #da6c6c0f;
 }
 
+.left, .right{
+    padding-block: 1rem;
+}
+
 .left {
-    /* flex: 1; */
     width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 1rem;
 }
 
 .right {
-    flex: 2;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    padding-right: 1rem;
 }
 
 .name {
     font-size: 1.1rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .green .change {

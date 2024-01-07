@@ -5,7 +5,7 @@
 .heroSection {
     display: flex;
     align-items: center;
-    padding-block: 5rem;
+    padding-block: 6rem;
 }
 
 .heroLeft {
@@ -21,6 +21,7 @@
 
 .heroRight img {
     max-width: 100%;
+    height: auto;
     object-fit: contain;
 }
 
@@ -41,4 +42,28 @@
 
 .heroButton {
     font-size: 1rem;
+}
+
+@media screen and (max-width:1000px) {
+    .heroSection {
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .heroSection .title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .heroSection .para {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .heroButton {
+        font-size: 0.8rem;
+    }
 }

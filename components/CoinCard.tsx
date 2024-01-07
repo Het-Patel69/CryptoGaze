@@ -4,6 +4,7 @@ import { coin } from "@/types/coin";
 import Image from "next/image";
 
 import styles from "./CoinCard.module.css";
+import { formatCompactNumber } from "@/utils/numberFormat";
 
 const CoinCard = ({ elem }: { elem: coin }) => {
   const isPositive = elem.price_change_percentage_24h > 0;
@@ -19,10 +20,11 @@ const CoinCard = ({ elem }: { elem: coin }) => {
           height={50}
           width={50}
         />
-        <p className={styles.name}>{elem.name}</p>
+        <p className={styles.name}>{elem.symbol}</p>
       </div>
       <div className={styles.right}>
         <p className={styles.price}>Price : &#36;{elem.current_price}</p>
+        <p>Market Cap : &#36;{formatCompactNumber(elem.market_cap)}</p>
         <div>
           <p
             className={`${styles.change}`}
