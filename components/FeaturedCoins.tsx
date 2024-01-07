@@ -5,6 +5,7 @@ import CoinCard from "./CoinCard";
 import { coins } from "@/data/coins";
 
 import styles from "./FeaturedCoins.module.css";
+import Link from "next/link";
 
 const FeaturedCoins = async () => {
   const res = await fetch(
@@ -18,11 +19,15 @@ const FeaturedCoins = async () => {
 
   return (
     <>
-    <h1 className={styles.title}>Featured Coins</h1>
+      <h1 className={`section-title ${styles.title}`}>Top Cryptocurrencies</h1>
       <div className={styles.coinsGridWrapper}>
         <div className={styles.coinsGrid}>
           {data.map((coin: coin) => {
-            return <CoinCard key={coin.id} elem={coin} />;
+            return (
+              <Link key={coin.id} href={`coins/${coin.id}`}>
+                <CoinCard elem={coin} />
+              </Link>
+            );
           })}
         </div>
       </div>

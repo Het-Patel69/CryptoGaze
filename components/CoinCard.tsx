@@ -39,8 +39,8 @@ const CoinCard = ({ elem }: { elem: coin }) => {
             />
           </p>
         </div>
-        <p>24H Low : {elem.low_24h}</p>
-        <p>24H High : {elem.high_24h}</p>
+        {/* <p>24H Low : {elem.low_24h}</p>
+        <p>24H High : {elem.high_24h}</p> */}
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import ButtonWithIcon from "@/components/ButtonWithIcon";
 import Link from "next/link";
 import FeaturedCoins from "@/components/FeaturedCoins";
 import { Suspense } from "react";
+import MoreServices from "@/components/MoreServices";
 
 export default function Home() {
   return (
@@ -51,10 +52,13 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={`${styles.section}`}>
+      <section className={`${styles.section} ${styles.featuredSection}`}>
         <Suspense fallback={<div>Loading...</div>}>
           <FeaturedCoins />
         </Suspense>
+      </section>
+      <section>
+        <MoreServices />
       </section>
     </>
   );
