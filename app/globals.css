@@ -3,11 +3,11 @@
   --colorTextDark: #333333;
   --text: hsl(0, 0%, 6%);
   --background: hsl(0, 0%, 100%);
-  --primary: hsl(145, 61%, 21%);
-  --primaryLight: hsl(145, 61%, 31%);
+  --primary: #155630;
+  --primaryLight: #1f7f47;
   --secondary: hsl(145, 18%, 87%);
   --secondaryLight: hsl(145, 18%, 93%);
-  --accent: hsl(0, 60%, 64%);
+  --accent: #da6c6c;
 }
 
 
