@@ -1,0 +1,19 @@
+.positive {
+    background-color: #1f7f470f;
+}
+
+.negative {
+    background-color: #da6c6c0f;
+}
+
+.positiveChange {
+    color: var(--primaryLight);
+}
+
+.negativeChange {
+    color: var(--accent)
+}
+
+.image{
+    object-fit: contain;
+}
