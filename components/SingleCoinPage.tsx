@@ -28,7 +28,7 @@ const SingleCoinPage = ({ id }: { id: string }) => {
   console.log(data);
 
   if (error) {
-    return <h3>server error</h3>;
+    return <h3>server Error</h3>;
   }
 
   if (!data) {
