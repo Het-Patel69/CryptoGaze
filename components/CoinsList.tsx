@@ -46,7 +46,7 @@ const CoinsList = ({ initialData }: { initialData: coin[] }) => {
             <th>Current Price</th>
             <th>+/-24h</th>
             <th>+/-30d</th>
-            <th>+/-</th>
+            <th>+/- 1 Year</th>
           </tr>
           {data.map((elem: coin, index) => {
             const isPositive = elem.price_change_24h > 0;
