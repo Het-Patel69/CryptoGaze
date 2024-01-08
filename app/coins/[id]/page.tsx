@@ -10,7 +10,6 @@ interface props {
 const page = ({ params }: props) => {
   return (
     <div>
-      <h1>{params.id}</h1>
       <SingleCoinPage id={params.id}/>
     </div>
   );
