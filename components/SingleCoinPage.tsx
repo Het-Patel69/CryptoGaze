@@ -9,23 +9,21 @@ const SingleCoinPage = ({ id }: { id: string }) => {
   const [data, setData] = useState<SingleCoinData>();
 
   async function fetchCoinData() {
-    const res = await fetch(`https://api.coingecko.com/api/v3/coins/${id}`);
-
-    if (!res.ok) {
+    const res = await fetch(`/fetchSingleCoin?id=${id}`);
+    if (res.status === 500) {
       setError(true);
-      return;
     }
-
     const tempData = await res.json();
 
+    if (tempData === false) {
+      setError(true);
+    }
     setData(tempData);
   }
 
   useEffect(() => {
-    console.log("mounted");
     fetchCoinData();
   }, []);
-  console.log(data);
 
   if (error) {
     return <h3>server Error</h3>;
